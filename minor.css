@@ -1,0 +1,291 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body{font-family: 'Poppins', sans-serif;
+     background: #fafafa}
+p{font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: #999;
+}
+a,
+a:hover,
+a:focus{
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.navbar{
+	padding: 15px 10px;
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	margin-bottom: 40px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.navbar-btn{
+	box-shadow: none;
+	outline: none!important;
+	border: none;
+}
+
+.line{
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #ddd;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: rgb(249,249,249);
+    color: #000;
+    transition: all 0.3s;
+}
+#sidebar.active{
+	margin-left: -250px;
+}
+
+#sidebar input[type=text]{
+            padding: 10px;
+            /*float: left;
+            border: none;*/
+            width: 200px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+            /*margin-top: 8px;
+            margin-right: 15px;*/
+            font-size: 14px;
+            border: 1px solid #2d2d2d;
+            border-radius: 10px;
+         }
+
+
+#sidebar .sidebar-header{
+	padding: 20px;
+	background: rgb(249,249,249);
+}
+#sidebar ul.components{
+	padding: 20px 0px;
+	border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+
+#sidebar ul li a{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+#sidebar ul li a:hover {
+    color:white;
+    background:black;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: black;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: rgb(249,249,249);
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+a.download{
+	background: #fff;
+	color: #7386D5;
+}
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+#sidebarCollapse{
+    background: #2d2d2d;
+}
+@media(maz-width:768px){
+	#sidebar{margin-left: -250px;}
+	#sidebar.active{
+		margin-left: 0px;
+	}
+	#sidebarCollapse span{
+		display: none;
+	}
+}
+
+
+/*Arrow*/
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    float: left;
+    z-index: 0;
+    margin: 17px 1em 0 2em;
+}
+.item input + .arrow {
+    transform: rotate(-90deg);
+    transition: 0.1s;
+}
+.item input:checked + .arrow {
+    transform: rotate(0deg);
+    transition: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+#content #school_info{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            float: right;
+            padding:10px;
+         }
+         #content #school_info .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 300px;
+          margin: auto;
+          text-align: center;
+          font-family: arial;
+        }
+
+        #content #school_info .title {
+          color: grey;
+          font-size: 18px;
+        }
+
+        #school_info button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+        }
+
+        #school_info a{
+          text-decoration: none;
+          font-size: 22px;
+          color: black;
+        }
+
+        #school_info button:hover, a:hover {
+          opacity: 0.7;
+        }
+        #content #school_info table{
+            position: absolute;
+            overflow-y:scroll;
+            height:100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        #school_info .info_button{
+            border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+        }
+
+        .star-ratings-css {
+              unicode-bidi: bidi-override;
+              color: #c5c5c5;
+              font-size: 25px;
+              height: 25px;
+              width: 100px;
+              margin: 0 auto;
+              position: relative;
+              padding: 0;
+              text-shadow: 0px 1px 0 #a2a2a2;
+            }
+            .star-ratings-css-top {
+              color: #e7711b;
+              padding: 0;
+              position: absolute;
+              z-index: 1;
+              display: block;
+              top: 0;
+              left: 0;
+              overflow: hidden;
+            }
+            .star-ratings-css-bottom {
+              padding: 0;
+              display: block;
+              z-index: 0;
+            }
+            .star-ratings-sprite {
+              background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+              font-size: 0;
+              height: 21px;
+              line-height: 0;
+              overflow: hidden;
+              text-indent: -999em;
+              width: 110px;
+              margin: 0 auto;
+            }
+            .star-ratings-sprite-rating {
+              background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+              background-position: 0 100%;
+              float: left;
+              height: 21px;
+              display: block;
+            }
+
